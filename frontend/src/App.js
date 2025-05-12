@@ -23,21 +23,21 @@ function App() {
       <div className="container">
         <Header />
         <div className="content">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/menu/chicken-rice" element={<MenuChickenRice />} />
-          <Route path="/menu/spaghetti" element={<MenuSpaghetti />} />
-          <Route path="/menu/combo" element={<MenuCombo />} />
-          <Route path="/menu/side-dishes" element={<MenuSideDishes />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/restaurant" element={<Restaurant />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/cart" element={<Cart />} />
-        </Routes>
-        </div>
-        <Footer />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/menu" element={<Menu />} />
+                <Route path="/menu/chicken-rice" element={<MenuChickenRice />} />
+                <Route path="/menu/spaghetti" element={<MenuSpaghetti />} />
+                <Route path="/menu/combo" element={<MenuCombo />} />
+                <Route path="/menu/side-dishes" element={<MenuSideDishes />} />
+                <Route path="/news" element={<News />} />
+                <Route path="/restaurant" element={<Restaurant />} />
+                <Route path="/about-us" element={<AboutUs />} />
+                <Route path="/cart" element={<Cart />} />
+              </Routes>
+        </div>        
       </div>
+      <Footer />   {/* Nằm ngoài container để width fullscreen */}
     </Router>
 
   );

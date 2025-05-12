@@ -1,0 +1,16 @@
+.menu-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.menu-item {
+  border-bottom: 1px solid #ccc;
+  padding: 12px 0;
+}
