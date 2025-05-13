@@ -11,7 +11,7 @@ return (
         <select 
         id="city-select"
         value={selectedCity} onChange={handleOnChange}
-             style = {{padding: '8px', fontSize: '16px', borderRadius: '8px', width: '210px', height: '40px'}}
+             style = {{padding: '8px', fontSize: '24px', borderRadius: '10px', width: '410px', height: '80px'}}
         >
         <option value = "">City</option>
         { cities.map((city, index) => (
