@@ -14,8 +14,12 @@ body, html, #root {
 }
 
 .header, .footer {
+  padding-top: 60px;
   background-color: #333;
   color: #fff;
   padding: 1rem;
   text-align: center;
+}
+.content {
+  padding-top: 60px; 
 }

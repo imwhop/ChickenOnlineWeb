@@ -1,9 +1,12 @@
 import React from 'react';
 
-export default function Restaurant() {
+function Restaurant() {
+  console.log("RENDERING RESTAURANT PAGE");
   return (
-    <div>
-      <h2>Nha Hang</h2>
+    <div style={{ padding: '40px', backgroundColor: 'lightyellow' }}>
+      <h1 style={{ fontSize: '52px', color: 'black', }}>Tao la Nhat Anh</h1>
     </div>
   );
 }
+
+export default Restaurant;
