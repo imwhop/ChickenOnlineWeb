@@ -10,7 +10,7 @@ function DistrictDropDown() {
     <div style={{margin:'20px'}}>
         <select id= "distict-select"
                 value = {districtSelected} onChange = {handleOnChange} 
-                style = {{padding: '8px', fontSize: '24px', borderRadius: '10px', width: '410px', height: '80px'}}
+                style = {{padding: '20px', fontSize: '24px', borderRadius: '20px', width: '500px', height: '80px'}}
         >
             <option value={""}>District</option>
             {

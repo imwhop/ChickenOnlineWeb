@@ -2,7 +2,7 @@ import { useState } from "react";
 
 function CityDropDown () { 
     const [selectedCity, setSelectedCity] = useState  ('')
-    const cities = ['Ha Noi', 'Ho Chi Minh' , 'Can Tho'];
+    const cities = ['Ho Chi Minh'];
     const handleOnChange = (event) => {
         setSelectedCity(event.target.value);
     }
@@ -11,7 +11,7 @@ return (
         <select 
         id="city-select"
         value={selectedCity} onChange={handleOnChange}
-             style = {{padding: '8px', fontSize: '24px', borderRadius: '10px', width: '410px', height: '80px'}}
+             style = {{padding: '20px', fontSize: '24px', borderRadius: '20px', width: '500px', height: '80px'}}
         >
         <option value = "">City</option>
         { cities.map((city, index) => (
