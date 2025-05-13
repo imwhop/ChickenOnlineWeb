@@ -35,9 +35,10 @@ function App() {
                 <Route path="/about-us" element={<AboutUs />} />
                 <Route path="/cart" element={<Cart />} />
               </Routes>
-        </div>        
+        </div>  
+        <Footer />       
       </div>
-      <Footer />   {/* Nằm ngoài container để width fullscreen */}
+      
     </Router>
 
   );

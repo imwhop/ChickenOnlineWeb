@@ -8,7 +8,7 @@
 
 /* Full height layout */
 html, body, #root {
-    height: 2900px;
+    height: 100%;
     font-family: 'Arial', sans-serif;
     background-color: #f8f8f8;
 }
@@ -16,17 +16,18 @@ html, body, #root {
 #root {
     display: flex;
     flex-direction: column;
+    min-height: 100vh; /* Đảm bảo root có chiều cao ít nhất bằng chiều cao viewport */
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    width: 100%;
+    min-height: 100vh; /* Đảm bảo container có chiều cao ít nhất bằng chiều cao viewport */
+    width: 100%; 
 }
 
 .content {
-    flex-grow: 1;
+    flex-grow: 1; /* Content sẽ chiếm phần không gian còn lại */
     
 }
 
@@ -103,6 +104,7 @@ html, body, #root {
     flex-wrap: wrap;
     margin-top: auto; /* Đẩy footer xuống dưới */
     box-sizing: border-box;
+
     
 }
 
