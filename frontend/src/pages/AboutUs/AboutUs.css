@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
+.About-Header {
+  
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.ChickenHeader {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 20px;
+       
+}
+.About-Title {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+  position: absolute;
+  font-size: 160px;
+  z-index: 1;
+  color: #ffff;
+}
+.StoreInfo{ 
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+.text{ 
+    line-height: 1.6;
+    max-width: 700px;
+    font-size: 18px;
+    margin-right: 50px;
+}
+.image{ 
+  border-radius: 30px;
+  width: 30%;
+  height: 540px;
+}
+.image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.image-bar {
+  width: 100%;
+  height: 100px; 
+  background-color: #9A3324;
+  margin-top: 30px;
+}
+.rectangle{
+  width: 10px;
+  height: 20px;
+  border-left: 10px solid transparent; /* Kích thước tam giác */
+  border-right: 10px solid transparent; /* Kích thước tam giác */
+  border-top: 10px solid #9A3324; 
+  justify-content: center;
+}
+.TeamInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 40px;
+    height: 400px;
+}
