@@ -16,6 +16,8 @@ import News from "./pages/News/News";
 import Restaurant from "./pages/Restaurant/Restaurant";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Cart from "./pages/Cart/Cart";
+import Account from "./pages/Account/Account";
+import Signup from "./pages/Signup/Signup";
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
                 <Route path="/restaurant" element={<Restaurant />} />
                 <Route path="/about-us" element={<AboutUs />} />
                 <Route path="/cart" element={<Cart />} />
+                <Route path="/account" element={<Account />} />
+                <Route path="/signup" element={<Signup />} />
               </Routes>
         </div>  
         <Footer />       

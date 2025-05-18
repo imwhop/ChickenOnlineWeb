@@ -1,0 +1,84 @@
+.Signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #F7F3F3;
+}
+
+.Signup-box {
+    display:flex;
+    background-color: white;
+    border-radius: 60px;
+    overflow: hidden; 
+/* cách để nói với trình duyệt rằng: "Nếu nội dung bên trong phần tử này vượt quá kích thước của nó, hãy cắt bỏ phần nội dung thừa đó và đừng hiển thị thanh cuộn*/
+    box-shadow : 0 4px 8px rgba(0, 0, 0, 0.2); /* đổ bóng */
+    width: 50%;
+    max-width: 1000px;
+    height: 800px;
+    margin: 40px;
+}
+
+.Signup-image img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover; /* đảm bảo hình ảnh được cắt và co giãn để phù hợp với kích thước của phần tử cha */
+    border-radius: 60px;
+}
+
+.Signup-image {
+    flex: 1; /* Phần tử này sẽ chiếm 50% chiều rộng của phần tử cha */
+    min-width: 300px;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 60px;
+
+}
+
+.Signup-form{
+    flex: 2; /* Phần tử này sẽ chiếm 50% chiều rộng của phần tử cha */
+    padding: 70px 30px; /* top-bottom 70px, left-right 30px */
+    display: flex;
+    flex-direction: column; /* Đặt chiều hướng của flexbox là cột */
+    justify-content: flex-start;
+}
+.Signup-form h2{
+  margin-bottom: 20px; /* khoảng cách dưới */
+  font-size: 24px; /* kích thước chữ */
+  font-weight: bold; /* độ đậm của chữ */
+}
+
+.Signup-form input[type="text"],
+.Signup-form input[type="email"],
+.Signup-form input[type="password"] {
+    width: 100%; /* chiều rộng 100% */
+    padding: 12px; /* khoảng cách bên trong */
+    margin-bottom: 20px;
+    border: none; /* không có viền xung quanh */
+    border-bottom: 1px solid #000000; /* viền dưới */
+    font-size: 14px;
+    outline: none; /* không có viền khi được chọn */
+}
+
+.Create-button{
+    background-color: #F8B02C;
+    color: white;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer; /* con trỏ chuột sẽ chuyển thành hình bàn tay khi di chuột qua */
+    border-radius: 20px; 
+}
+
+.Signin-text{
+  text-align: center;
+  margin-top: 20px;
+}
+.Signin-text a{
+  color: #333;
+  font-weight: bold;
+  text-decoration: underline; /* có gạch chân */
+}
