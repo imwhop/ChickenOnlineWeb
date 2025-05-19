@@ -18,6 +18,7 @@ import Cart from "./pages/Cart/Cart";
 import Account from "./pages/Account/Account";
 import Signup from "./pages/Signup/Signup";
 import Profile from "./pages/Profile/Profile";
+import Checkout from "./pages/Checkout/Checkout"
 
 import AdminHome from "./pages/Admin/Home/Home";
 import AdminCustomer from "./pages/Admin/Customer/Customer";
@@ -73,6 +74,7 @@ function App() {
           <Route path="/account" element={<Account />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/checkout" element={<Checkout />} />
         </Route>
       </Routes>
     </Router>

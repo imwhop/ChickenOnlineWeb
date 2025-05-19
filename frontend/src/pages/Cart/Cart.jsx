@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 import './Cart.css';
+import { useNavigate } from 'react-router-dom';
+import GroupComboB from '../../assets/images/Group Combo B.png'
+import FrenchFries from '../../assets/images/French Fries.png';
+import CheerHighLight from '../../assets/images/Cheer-Highlight.jpg'; 
+import { Link } from 'react-router-dom';
 
 const initialItems = [
-  { id: 1, name: 'Group Combo B', price: 24.4, quantity: 1, image: '/group-combo.jpg' },
-  { id: 2, name: 'Teriyaki Chicken Rice', price: 4.8, quantity: 3, image: '/teriyaki.jpg' },
-  { id: 3, name: 'Cheese Fried Potatoes', price: 3.5, quantity: 3, image: '/cheese-potatoes.jpg' },
+  { id: 1, name: 'Group Combo B', price: 24.4, quantity: 1, image: GroupComboB },
+  { id: 2, name: 'Teriyaki Chicken Rice', price: 4.8, quantity: 3, image: FrenchFries },
+  { id: 3, name: 'Cheese Fried Potatoes', price: 3.5, quantity: 3, image: CheerHighLight },
 ];
 
 const CartPage = () => {
@@ -68,7 +73,7 @@ const CartPage = () => {
           <span>Grand total:</span>
           <span>${grandTotal}</span>
         </div>
-        <button className="checkout-btn">PROCEED TO CHECKOUT</button>
+        <button className="checkout-btn"><Link to="/Checkout">PROCEED TO CHECKOUT</Link> </button>
       </div>
     </div>
   );
