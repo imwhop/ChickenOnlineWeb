@@ -20,8 +20,7 @@ import Signup from "./pages/Signup/Signup";
 import Profile from "./pages/Profile/Profile";
 import Checkout from "./pages/Checkout/Checkout"
 
-import AdminHome from "./pages/Admin/Home/Home";
-import AdminCustomer from "./pages/Admin/Customer/Customer";
+import AdminHome from "./pages/Admin/DashBroad/DashBroad";
 
 // Layout cho trang người dùng
 function ClientLayout() {
@@ -56,7 +55,11 @@ function App() {
     
         <Route element={<AdminLayout />}>
           <Route path="/admin" element={<AdminHome />} />
-          <Route path="/admin/customer" element={<AdminCustomer />} />
+          <Route path="/admin/customer" element={<AdminHome />} />
+          <Route path="/admin/products" element={<AdminHome />} />
+          <Route path="/admin/orders" element={<AdminHome />} />
+          <Route path="/admin/settings" element={<AdminHome />} />
+
         </Route>
         
  
