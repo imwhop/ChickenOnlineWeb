@@ -12,7 +12,7 @@ import MenuChickenRice from "./pages/MenuChickenRice/MenuChickenRice";
 import MenuSpaghetti from "./pages/MenuSpaghetti/MenuSpaghetti";
 import MenuCombo from "./pages/MenuCombo/MenuCombo";
 import MenuSideDishes from "./pages/MenuSideDishes/MenuSideDishes";
-import MenuPage from "./pages/Menu/Menu"; // layout chứa Sidebar + Outlet (tên file nên đổi thành Menu.jsx nếu bạn dùng như layout)
+import MenuPage from "./pages/Menu/Menu"; // layout chứa Sidebar + Outlet
 import News from "./pages/News/News";
 import Restaurant from "./pages/Restaurant/Restaurant";
 import AboutUs from "./pages/AboutUs/AboutUs";
@@ -28,8 +28,6 @@ import AdminOrders from "./pages/Admin/orders/order";
 import AdminSetting from "./pages/Admin/setting/setting";
 import AdminProduct from "./pages/Admin/products/products";
 
-
-
 // Layout cho trang người dùng
 function ClientLayout() {
   return (
@@ -43,7 +41,6 @@ function ClientLayout() {
   );
 }
 
-
 function AdminLayout() {
   return (
     <div className="admin-container">
@@ -55,8 +52,6 @@ function AdminLayout() {
     </div>
   );
 }
-
-
 
 function App() {
   return (
@@ -74,11 +69,16 @@ function App() {
         
         <Route element={<ClientLayout />}>
           <Route path="/home" element={<Home />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/menu/chicken-rice" element={<MenuChickenRice />} />
-          <Route path="/menu/spaghetti" element={<MenuSpaghetti />} />
-          <Route path="/menu/combo" element={<MenuCombo />} />
-          <Route path="/menu/side-dishes" element={<MenuSideDishes />} />
+          
+          {/* Route chứa sidebar bên trái */}
+          <Route path="/menu" element={<MenuPage />}>
+            <Route index element={<MenuAll />} /> {/* Trang mặc định của /menu */}
+            <Route path="spaghetti" element={<MenuSpaghetti />} />
+            <Route path="chicken-rice" element={<MenuChickenRice />} />
+            <Route path="combo" element={<MenuCombo />} />
+            <Route path="side-dishes" element={<MenuSideDishes />} />
+          </Route>
+
           <Route path="/news" element={<News />} />
           <Route path="/restaurant" element={<Restaurant />} />
           <Route path="/about-us" element={<AboutUs />} />

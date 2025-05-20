@@ -40,9 +40,7 @@ function Header() {
                         <li>
                             <Link to="/admin/settings">Settings</Link>
                         </li>
-                        <li>
-                            <Link to="/admin/menu">Menu</Link>
-                        </li>
+                      
                         <li className="divider">
                             <Link to="/home" className="logout">Logout</Link>
                         </li>

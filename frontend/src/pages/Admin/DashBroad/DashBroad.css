@@ -1,1 +1,54 @@
+.content-top{ 
+    display: flex;
+    justify-content: space-between;
+}
 
+.count-revenue{ 
+   width: 430px;
+   height: 400px;
+   background-color: rgb(255, 255, 255);
+   border-radius: 21px;
+   margin-left: 50px;
+   margin-top: 50px;
+
+}
+.quick-button { 
+  display: flex;
+  justify-content: space-between;
+  gap: 250px; 
+}
+
+.customer-button, .product-button {
+  width: 440px;
+  height: 250px;
+  border-radius: 21px;
+  margin-top: 50px;
+
+  
+}
+.customer-button { background-color: #008C8A; }
+.product-button  { background-color: #018944; }
+
+.Top-selling-product { 
+  padding: 10px;
+  margin-top: 150px;
+  border-radius: 21px;
+  background-color: rgb(231, 222, 222);
+}
+.label-product{ 
+  display: flex;
+  justify-content: space-between;
+    font-weight: bold;
+  color: #7B809A;
+  font-size: 32px;
+}
+.Product { 
+  display: flex;
+  justify-content: space-between;
+  font-size: 32px;
+  font-weight: bold;
+  height: 135px;
+  background-color: #F3DEDE;
+  text-align: center;           
+  align-items: center;
+}

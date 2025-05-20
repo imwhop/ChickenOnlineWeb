@@ -1,6 +1,7 @@
-.container{ 
+.product-admin-container{ 
   border-radius: 14px;
   margin-top: 30px;
+  background-color: #AE0505;  
   padding: 20px;
   width: calc(100% - 40px); /* Đặt chiều rộng của phân tử bằng chiều rộng của phân tử cha (100%) sau đó trừ đi 40% => margin left ,right: 20% */ 
   box-sizing: border-box;

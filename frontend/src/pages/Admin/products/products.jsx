@@ -14,7 +14,7 @@ function Products() {
                     How are you doing?
                 </h3>
 
-                <div className='container'> 
+                <div className='product-admin-container'> 
                     <div className='label'>
                         <h3>Prodcut</h3>
                         <h3>Name</h3>
