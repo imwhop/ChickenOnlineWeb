@@ -12,6 +12,7 @@ import MenuChickenRice from "./pages/MenuChickenRice/MenuChickenRice";
 import MenuSpaghetti from "./pages/MenuSpaghetti/MenuSpaghetti";
 import MenuCombo from "./pages/MenuCombo/MenuCombo";
 import MenuSideDishes from "./pages/MenuSideDishes/MenuSideDishes";
+import MenuPage from "./pages/Menu/Menu"; // layout chứa Sidebar + Outlet (tên file nên đổi thành Menu.jsx nếu bạn dùng như layout)
 import News from "./pages/News/News";
 import Restaurant from "./pages/Restaurant/Restaurant";
 import AboutUs from "./pages/AboutUs/AboutUs";
@@ -55,7 +56,7 @@ function AdminLayout() {
   );
 }
 
-import MenuPage from "./pages/Menu/Menu"; // layout chứa Sidebar + Outlet (tên file nên đổi thành Menu.jsx nếu bạn dùng như layout)
+
 
 function App() {
   return (

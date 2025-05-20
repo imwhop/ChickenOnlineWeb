@@ -1,0 +1,49 @@
+
+
+.crudAccount-container { 
+  border-radius: 14px;
+  margin-top: 30px;
+  padding: 10px;
+  background-color: grey;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.account-panel{ 
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  
+}
+.staffList{
+  background-color: #F8B02C;
+  height:  150px;
+  width: 595px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;              
+  justify-content: center;   
+  align-items: center;
+    position: relative;
+}
+.crud-panel {
+  background-color: #F8B02C;
+  height:  555px;
+  width: 730px;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;              
+  justify-content: center;   
+  align-items: center;
+
+}
+.rectangle{
+  width: 10px;
+  height: 20px;
+  border-left: 10px solid transparent; /* Kích thước tam giác */
+  border-right: 10px solid transparent; /* Kích thước tam giác */
+  border-top: 10px solid #000000; 
+  position: absolute;
+  right: 10px;  
+    
+}
