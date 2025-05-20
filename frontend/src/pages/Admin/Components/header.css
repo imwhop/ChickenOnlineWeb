@@ -1,6 +1,6 @@
 /* Home.css */
 .menu-icon {
-  width: 30px;
+  width: 40px;
   height: 24px;
   position: relative;
   cursor: pointer;
@@ -79,18 +79,19 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  background-color: #fff;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 
 .logo {
-  height: 50px;
+  height: 100%;
+  max-width: 200px;
   order: 3; /* Di chuyển logo sang phần tử cuối cùng trong flex container */
 }
 
 .dashboard-title {
   margin: 0 auto;
+  font-size: 60px;
   text-align: center;
   order: 2; /* Giữ tiêu đề ở giữa */
 }

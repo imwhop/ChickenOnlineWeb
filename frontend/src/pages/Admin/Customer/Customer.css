@@ -11,14 +11,14 @@
 .account-panel{ 
   padding: 20px;
   display: flex;
-  justify-content: space-between;
-
-  
+  justify-content: space-between; 
 }
+
 .staffList{
+  font-size: 30px;
   background-color: #F8B02C;
   height:  150px;
-  width: 595px;
+  width: 700px;
   border-radius: 20px;
   text-align: center;
   display: flex;              
@@ -40,9 +40,9 @@
 .rectangle{
   width: 10px;
   height: 20px;
-  border-left: 10px solid transparent; /* Kích thước tam giác */
-  border-right: 10px solid transparent; /* Kích thước tam giác */
-  border-top: 10px solid #000000; 
+  border-left: 13px solid transparent; /* Kích thước tam giác */
+  border-right: 13px solid transparent; /* Kích thước tam giác */
+  border-top: 13px solid #000000; 
   position: absolute;
   right: 10px;  
     

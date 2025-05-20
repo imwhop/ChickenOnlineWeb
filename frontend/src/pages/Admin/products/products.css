@@ -1,0 +1,24 @@
+.container{ 
+  border-radius: 14px;
+  margin-top: 30px;
+  padding: 20px;
+  width: calc(100% - 40px); /* Đặt chiều rộng của phân tử bằng chiều rộng của phân tử cha (100%) sau đó trừ đi 40% => margin left ,right: 20% */ 
+  box-sizing: border-box;
+}
+
+.label{ 
+    display: flex;
+    justify-content: space-between;
+    color: #F8B02C;
+    padding: 10px;
+    font-size: 32px;
+}
+.panel {
+    background-color: #F8B02C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 36px;
+    height: 120px;
+    padding: 10px;   
+}

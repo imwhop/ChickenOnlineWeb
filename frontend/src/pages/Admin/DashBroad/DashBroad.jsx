@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-
 import './DashBroad.css'; 
-
 import Header from "../Components/header";
 
 function DashBroad() {
@@ -9,8 +7,8 @@ function DashBroad() {
         <div>
             <Header />
             <div className="dashboard-content">
-                <h2>Welcome, <span style={{color: 'red'}}>Admin!</span></h2>
-                <h3>How are you doing</h3>
+                <h2 style={{fontSize:'50px',  marginLeft:'30px' }}>Welcome, <span style={{color: 'red'}}>Admin!</span></h2>
+                <h3 style={{fontSize:'30px', marginLeft: '30px'}}>How are you doing?</h3>
                 
             </div>
         </div>

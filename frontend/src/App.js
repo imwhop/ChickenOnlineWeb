@@ -1,6 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
-import './assets/images/styles/main.css';
+import { BrowserRouter as Router, Routes, Route, Outlet, Navigate } from "react-router-dom";
+import './index.css';
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -62,6 +62,7 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<Navigate to="/home" replace />} />
     
         <Route element={<AdminLayout />}>
           <Route path="/admin" element={<AdminHome />} />
@@ -69,11 +70,10 @@ function App() {
           <Route path="/admin/products" element={<AdminProduct />} />
           <Route path="/admin/orders" element={<AdminOrders />} />
           <Route path="/admin/settings" element={<AdminSetting />} />
-
         </Route>
         
         <Route element={<ClientLayout />}>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/menu/chicken-rice" element={<MenuChickenRice />} />
           <Route path="/menu/spaghetti" element={<MenuSpaghetti />} />

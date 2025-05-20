@@ -1,17 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Header from "../Components/header";
+import './order.css'; 
 
-import './orders.css'; 
-
-function orders() { 
+function Orders() { 
     return (
         <div>
-              <Header />
-            <div className="order-content">
-              
+            <Header />
+            <div className="dashboard-content">
+                <h2 style={{ fontSize: '50px', marginLeft: '30px' }}>
+                    Welcome, <span style={{ color: 'red' }}>Admin!</span>
+                </h2>
+                <h3 style={{ fontSize: '30px', marginLeft: '30px' }}>
+                    How are you doing?
+                </h3>
             </div>
-       
         </div>
     );
 }
-export default orders (); 
+
+export default Orders;
