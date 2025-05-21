@@ -28,6 +28,8 @@ import AdminOrders from "./pages/Admin/orders/order";
 import AdminSetting from "./pages/Admin/setting/setting";
 import AdminProduct from "./pages/Admin/products/products";
 
+import { CartProvider } from "./pages/Cart/CartContext";
+
 // Layout cho trang người dùng
 function ClientLayout() {
   return (
@@ -67,12 +69,12 @@ function App() {
           <Route path="/admin/settings" element={<AdminSetting />} />
         </Route>
         
-        <Route element={<ClientLayout />}>
+        {/* Client layout - bọc CartProvider ở đây */}
+        <Route element={<CartProvider><ClientLayout /></CartProvider>}>
           <Route path="/home" element={<Home />} />
           
-          {/* Route chứa sidebar bên trái */}
           <Route path="/menu" element={<MenuPage />}>
-            <Route index element={<MenuAll />} /> {/* Trang mặc định của /menu */}
+            <Route index element={<MenuAll />} />
             <Route path="spaghetti" element={<MenuSpaghetti />} />
             <Route path="chicken-rice" element={<MenuChickenRice />} />
             <Route path="combo" element={<MenuCombo />} />
