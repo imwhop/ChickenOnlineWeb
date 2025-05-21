@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Home.css'; 
 import HotChicken from '../../assets/images/hotchicken.jpg'; // Đường dẫn đến hình ảnh
 import SourChickenRice from '../../assets/images/Sweet and Sour Chicken Rice.jpg';
@@ -8,10 +8,17 @@ import GroupComboB from '../../assets/images/Group Combo B.png';
 import backgroundImage from '../../assets/images/chicken-restaurant.jpg';   //tên file có khoảng trắng dễ bị lỗi hoặc không được webpack xử lý đúng.
 import CheerHighLight from '../../assets/images/Cheer-Highlight.jpg'; 
 
-
-
+import { useNavigate } from 'react-router-dom';
+import { CartContext } from '../Cart/CartContext'; // đúng đường dẫn
 
 function Home() {
+  const { addToCart } = useContext(CartContext); // ✅ Đặt đúng trong component
+            const navigate = useNavigate();                // ✅ Đặt đúng trong component
+          
+            const handleOrder = (product) => {
+              addToCart(product);
+              navigate('/cart');
+            };
   return (
     <div>
       {/* Hero Image Section */}
@@ -27,31 +34,57 @@ function Home() {
       <div className="product-container">
         {/* product cards container */}
         <div className="product-card">
-          <img src={SourChickenRice} alt="Sweet and Sour Chicken Rice" className="sourchickenrice"/>
+          <img src={SourChickenRice} alt="Chicken Rice" />
           <h3>Sweet and Sour Chicken Rice</h3>
-          <p>Price: 4,5 $</p>
-          <button className="order-button">ORDER</button>
+          <p>Price: 6.4 $</p>
+          <button className="order-button"
+            onClick={() =>handleOrder({
+                id: 101,
+                name: 'Sweet and Sour Chicken Rice',
+                price: 6.4, image: SourChickenRice,})}>ORDER
+          </button>
         </div>
 
         <div className="product-card">
-          <img src={ChickenSpaghetti} alt="Chicken Spaghetti" className="chickenspaghetti"/>
+          <img src={ChickenSpaghetti} alt="Chicken Spaghetti" />
           <h3>Chicken Spaghetti</h3>
-          <p>Price: 6,4 $</p>
-          <button className="order-button">ORDER</button>
+          <p>Price: 6.4 $</p>
+          <button className="order-button"
+            onClick={() =>
+              handleOrder({
+                id: 108,
+                name: 'Chicken Spaghetti',
+                price: 6.4,
+                image: ChickenSpaghetti,})}>ORDER
+          </button>
         </div>
 
         <div className="product-card">
-          <img src={FrenchFries} alt="French Fries" className="frenchfries" />
+          <img src={FrenchFries} alt="French Fries" />
           <h3>French Fries</h3>
-          <p>Price: 3 $</p>
-          <button className="order-button">ORDER</button>
+          <p>Price: 6.4 $</p>
+          <button className="order-button"
+            onClick={() =>
+              handleOrder({
+                id: 105,
+                name: 'French Fries',
+                price: 6.4,
+                image: FrenchFries,})}>ORDER
+          </button>
         </div>
 
         <div className="product-card">
-          <img src={GroupComboB} alt="Group Combo B" className="groupcombob"/>
+          <img src={GroupComboB} alt="Group Combo B" />
           <h3>Group Combo B</h3>
-          <p>Price: 24,4 $</p>
-          <button className="order-button">ORDER</button>
+          <p>Price: 6.4 $</p>
+          <button className="order-button"
+            onClick={() =>
+              handleOrder({
+                id: 104,
+                name: 'Group Combo B',
+                price: 6.4,
+                image: GroupComboB,})}>ORDER
+          </button>
         </div>
       </div>
     </section>
