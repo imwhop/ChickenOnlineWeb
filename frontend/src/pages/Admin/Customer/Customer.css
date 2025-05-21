@@ -1,49 +1,49 @@
-
-
-.crudAccount-container { 
-  border-radius: 14px;
-  margin-top: 30px;
-  padding: 10px;
-  background-color: grey;
-  margin-left: 20px;
-  margin-right: 20px;
+.crudAccount-container {
+  width: 80%; 
+  margin: 24px auto 0 auto; 
+  padding: 6px;
+  background-color: #FFFF;
+  border-radius: 21px;
+  margin-top: 80px;
 }
-.account-panel{ 
-  padding: 20px;
+
+
+.account-panel {
+  padding: 12px; 
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
-.staffList{
-  font-size: 30px;
+.staffList {
+  font-size: 20px;     
   background-color: #F8B02C;
-  height:  150px;
-  width: 700px;
-  border-radius: 20px;
+  height: 96px;         
+  width: 448px;         
+  border-radius: 13px;  
   text-align: center;
-  display: flex;              
-  justify-content: center;   
+  display: flex;
+  justify-content: center;
   align-items: center;
   position: relative;
+   margin-left: 40px;
 }
+
 .crud-panel {
   background-color: #F8B02C;
-  height:  555px;
-  width: 730px;
-  border-radius: 20px;
+  height: 355px;       
+  width: 467px;       
+  border-radius: 13px;
   text-align: center;
-  display: flex;              
-  justify-content: center;   
+  display: flex;
+  justify-content: center;
   align-items: center;
-
+  margin-right: 40px;
 }
-.rectangle{
-  width: 10px;
-  height: 20px;
-  border-left: 13px solid transparent; /* Kích thước tam giác */
-  border-right: 13px solid transparent; /* Kích thước tam giác */
-  border-top: 13px solid #000000; 
+
+.rectangle {
+  border-left: 8px solid transparent;  
+  border-right: 8px solid transparent;
+  border-top: 8px solid #000000;       
   position: absolute;
-  right: 10px;  
-    
+  right: 6px;
 }

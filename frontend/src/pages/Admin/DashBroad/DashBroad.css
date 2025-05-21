@@ -1,54 +1,69 @@
-.content-top{ 
-    display: flex;
-    justify-content: space-between;
-}
-
-.count-revenue{ 
-   width: 430px;
-   height: 400px;
-   background-color: rgb(255, 255, 255);
-   border-radius: 21px;
-   margin-left: 50px;
-   margin-top: 50px;
-
-}
-.quick-button { 
+.content-top {
   display: flex;
   justify-content: space-between;
-  gap: 250px; 
 }
 
-.customer-button, .product-button {
-  width: 440px;
-  height: 250px;
-  border-radius: 21px;
-  margin-top: 50px;
-
-  
+.count-revenue {
+  width: 380px;        
+  height: 360px;        
+  background-color: rgb(255, 255, 255);
+  border-radius: 14px;    
+  margin-left: 32px;     
+  margin-top: 32px;
 }
-.customer-button { background-color: #008C8A; }
-.product-button  { background-color: #018944; }
 
-.Top-selling-product { 
-  padding: 10px;
-  margin-top: 150px;
-  border-radius: 21px;
-  background-color: rgb(231, 222, 222);
-}
-.label-product{ 
+.quick-button {
   display: flex;
   justify-content: space-between;
-    font-weight: bold;
-  color: #7B809A;
-  font-size: 32px;
+  gap: 162px;             
 }
-.Product { 
-  display: flex;
-  justify-content: space-between;
-  font-size: 32px;
-  font-weight: bold;
-  height: 135px;
-  background-color: #F3DEDE;
-  text-align: center;           
+
+.customer-button,
+.product-button {
+  width: 286px;          
+  height: 163px;        
+  border-radius: 14px;
+  margin-top: 32px;
+  margin-right: 80px;
+}
+
+.customer-button {
+  background-color: #008C8A;
+}
+
+.product-button {
+  background-color: #018944;
+}
+
+.Top-selling-product {
+  justify-content: center;
   align-items: center;
+  padding: 6px;    
+  margin-top: 98px;    
+  background-color: #FFFF;
+  width: calc(100% - 5%);
+  margin-left: 29px; 
+  border-radius: 21px;     
+}
+
+.label-product {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: #7B809A;
+  font-size: 21px;       
+  padding: 13px;          
+  margin-left: 6px;  
+}
+
+.Product {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;      
+  font-weight: bold;
+  height: 68px;          
+  background-color: #F3DEDE;
+  text-align: center;
+  align-items: center;
+
 }

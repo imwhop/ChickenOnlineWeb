@@ -1,8 +1,13 @@
 import React from 'react';
 import Header from "../Components/header";
+import { useNavigate } from 'react-router-dom'; 
 import './products.css'; 
 
 function Products() { 
+    const navigate = useNavigate() ; 
+    const handleProductClick = () => { 
+        navigate('/admin');
+    };
     return (
         <div>
             <Header />
@@ -13,6 +18,17 @@ function Products() {
                 <h3 style={{ fontSize: '30px', marginLeft: '30px' }}>
                     How are you doing?
                 </h3>
+                
+                <div className='quick-button' onClick={handleProductClick} style={{cursor:'pointer'}}>
+                        <div className='orders-button'>
+                            <h3 style={{padding:'20px',
+                                        color: '#FFFF',
+                                        fontSize: '36px',
+                                        marginTop: '20px'
+                            }}>          Product</h3>
+                      
+                        </div>             
+                    </div>
 
                 <div className='product-admin-container'> 
                     <div className='label'>

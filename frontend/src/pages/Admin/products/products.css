@@ -1,25 +1,49 @@
 .product-admin-container{ 
-  border-radius: 14px;
-  margin-top: 30px;
+  border-radius: 21px;
+  margin-top: 150px;
   background-color: #AE0505;  
-  padding: 20px;
-  width: calc(100% - 40px); /* Đặt chiều rộng của phân tử bằng chiều rộng của phân tử cha (100%) sau đó trừ đi 40% => margin left ,right: 20% */ 
+  padding: 7px;
+  width: calc(100% - 14px);
   box-sizing: border-box;
+  width: calc(100% - 10%);
+  margin-left: 70px;
+
 }
 
 .label{ 
     display: flex;
     justify-content: space-between;
     color: #F8B02C;
-    padding: 10px;
-    font-size: 32px;
+    padding: 3.5px;
 }
+
 .panel {
     background-color: #F8B02C;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 36px;
-    height: 120px;
-    padding: 10px;   
+    height: 42px;
+    padding: 3.5px;   
 }
+
+
+.quick-button {
+  display: flex;
+  gap: 162px;  
+
+         
+
+}
+
+.orders-button {
+  width: 386px;          
+  height: 263px;        
+  border-radius: 14px;
+  margin-top: 32px;
+  margin-right: 80px;
+  background-color: #018944;
+  margin-left: auto;
+  display: block;
+
+}
+

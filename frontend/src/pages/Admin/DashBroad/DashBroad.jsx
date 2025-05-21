@@ -1,8 +1,19 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';     //hàm này được sử dụng đẻ chuyển hướng đến các route khác nhau 
 import './DashBroad.css'; 
 import Header from "../Components/header";
 
 function DashBroad() {
+    const navigate = useNavigate();
+
+    const handleOrdersClick = () => {
+        navigate('/admin/orders');
+    };
+
+    const handleProductClick = () => {
+        navigate('/admin/products');
+    };
+
     return (
         <div>
             <Header />
@@ -17,16 +28,24 @@ function DashBroad() {
                         <h3 style={{padding: '30px'}}>Monthly Renvenue: </h3>
                     </div>
                     <div className='quick-button'>
-                        <div className='customer-button'>
-                            <h3 style={{padding:'20px'}}>Customer</h3>
+                        <div className='customer-button' onClick={handleOrdersClick} style={{ cursor: 'pointer' }}>
+                            <h3 style={{padding:'20px',
+                                        color: '#FFFF',
+                                        fontSize: '36px',
+                                        marginTop: '20px'
+                            }}>          Orders</h3>
                         </div>
-                        <div className='product-button'>
-                            <h3 style={{padding:'20px'}} >Product</h3>
+                        <div className='product-button' onClick={handleProductClick} style={{ cursor: 'pointer' }}>
+                            <h3 style={{padding:'20px',
+                                        color: '#FFFF',
+                                        fontSize: '36px',
+                                        marginTop: '20px'
+                            }}>         Product</h3>
                         </div>             
                     </div>
                 </div>
                 <div className='Top-selling-product'>
-                    <h3 style={{fontSize: '32px'}}>Top Selling Producs</h3>
+                    <h3 style={{fontSize: '22px', padding:'10px',  marginleft: '10px'}}>Top Selling Producs</h3>
                     <div className='label-product'>
                         <h3>Rank</h3>
                         <h3>Product</h3>

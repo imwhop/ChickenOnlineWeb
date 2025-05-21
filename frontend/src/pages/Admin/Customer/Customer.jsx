@@ -15,7 +15,7 @@ function Customers () {
                 </h3>
 
                 <div className='crudAccount-container'>
-                    <h3 style={{fontSize:'30px'}}>Customer list</h3>
+                    <h3 style={{fontSize:'20px', padding: '30px'}}>Customer list</h3>
                     <div className='account-panel'>
                         <div className='staffList'>
                             <h3>Vu Viet Hung</h3>
