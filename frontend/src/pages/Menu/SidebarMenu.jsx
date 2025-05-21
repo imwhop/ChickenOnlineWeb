@@ -5,7 +5,7 @@ import './SidebarMenu.css';
 export default function SidebarMenu() {
   return (
     <div className="sidebar-menu">
-      <div style={{ height: '80px' }}></div> {/* spacer để hạ nút */}
+      <div style={{ height: '100px' }}></div> {/* spacer để hạ nút */}
       <Link to="/menu/spaghetti" className="menu-button">Spaghetti</Link>
       <Link to="/menu/chicken-rice" className="menu-button">Chicken Rice</Link>
       <Link to="/menu/combo" className="menu-button">Combo</Link>
