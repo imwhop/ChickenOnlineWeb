@@ -1,48 +1,110 @@
+/* SecureCheckout.css */
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f0ed;
   margin: 0;
-  padding: 0;
+  font-family: 'Arial', sans-serif;
 }
 
-.cart-page, .checkout-page {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
+.checkout-container {
+  background-color: #f8f4f4;
+  padding: 30px;
+  min-height: 100vh;
 }
 
-.cart-item {
+.checkout-header {
   display: flex;
   align-items: center;
-  margin-bottom: 1rem;
+  gap: 10px;
+  color: #972f26;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
-.cart-item img {
-  width: 80px;
-  margin-right: 1rem;
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.checkout-body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.checkout-left {
+  flex: 2;
+  min-width: 300px;
+}
+
+.checkout-right {
+  flex: 1;
+  min-width: 250px;
+}
+
+.box {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.store-name {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.address {
+  font-size: 14px;
+  margin-top: 4px;
+  color: #333;
+}
+
+.details-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.payment-option {
+  background-color: white;
+  border-radius: 12px;
+  padding: 15px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #ddd;
 }
 
 .summary-box {
-  margin-top: 2rem;
-  padding: 1rem;
-  background: #fff;
-  border-radius: 8px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
 }
 
-.checkout-btn, .finish-btn {
-  margin-top: 1rem;
-  padding: 10px 20px;
-  background: black;
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.total {
+  font-weight: bold;
+}
+
+.finish-button {
+  background-color: #f9a825;
   color: white;
+  padding: 12px 30px;
+  font-size: 16px;
   border: none;
+  border-radius: 30px;
+  margin-top: 20px;
   cursor: pointer;
-}
-
-input {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin: 0.5rem 0;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+  /* width: 100%; */
 }
