@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext,useState } from 'react';
 import './Home.css'; 
 import HotChicken from '../../assets/images/hotchicken.jpg'; // Đường dẫn đến hình ảnh
 import SourChickenRice from '../../assets/images/Sweet and Sour Chicken Rice.jpg';
@@ -14,11 +14,26 @@ import { CartContext } from '../Cart/CartContext'; // đúng đường dẫn
 function Home() {
   const { addToCart } = useContext(CartContext); // ✅ Đặt đúng trong component
             const navigate = useNavigate();                // ✅ Đặt đúng trong component
-          
+
+            const [city, setCity] = useState('');
+            const [district, setDistrict] = useState('');
+
             const handleOrder = (product) => {
               addToCart(product);
               navigate('/cart');
             };
+            // dùng useNavigate để điều hướng đến trang Restaurant
+            // và truyền city và district làm state
+            const handleSearch = () => {
+              if (city && district) {
+                navigate('/restaurant', { state: { city, district } });
+              } else {
+                alert('Please select both City and District.');
+              }
+            };
+
+
+            
   return (
     <div>
       {/* Hero Image Section */}
@@ -106,17 +121,17 @@ function Home() {
             RESTAURANT <br />
             NEAR YOU
           </h2>
-          <select>
-            <option disabled selected hidden>City</option>
+          <select  value={city} onChange={(e) => setCity(e.target.value)}>
+            <option>City</option>
             <option>Ho Chi Minh</option>
           </select>
-          <select>
-            <option disabled selected hidden>District</option>
+          <select value={district} onChange={(e) => setDistrict(e.target.value)}>
+            <option>District</option>
             <option>1</option>
             <option>3</option>
             <option>9</option>
           </select>
-          <button>Search</button>
+          <button onClick={handleSearch}>Search</button>
         </div>
       </div>
     </section>

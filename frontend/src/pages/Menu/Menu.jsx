@@ -8,7 +8,7 @@ export default function Menu() {
     <div className="menu-page-layout">
       <SidebarMenu />
       <div className="menu-main-content">
-        <div className="menu-label">Product</div>
+        <div className="menu-label">PRODUCT</div>
         <div className="menu-content-area">
           <Outlet />
         </div>
