@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import "./Profile.css";
+import {useNavigate} from "react-router-dom";
 
 function Profile() {
   const [user, setUser] = useState(null);
@@ -9,6 +11,7 @@ function Profile() {
     email: "",
     phone: ""
   });
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchUser = async () => {
@@ -19,10 +22,10 @@ function Profile() {
         });
         setUser(res.data);
         setFormData({
-          firstName: res.data.firstName,
-          lastName: res.data.lastName,
-          email: res.data.email,
-          phone: res.data.phone,
+          firstName: res.data.FirstName,
+          lastName: res.data.LastName,
+          email: res.data.Email,
+          phone: res.data.Phone,
         });
       } catch (err) {
         console.error("Lấy thông tin người dùng thất bại", err);
@@ -47,19 +50,27 @@ function Profile() {
       alert("Cập nhật thất bại: " + (err.response?.data?.error || err.message));
     }
   };
+    const handleLogout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("loginTime");
+    navigate("/account"); // chuyển về trang đăng nhập
+  };
 
   if (!user) return <div>Loading...</div>;
 
   return (
-    <div>
-      <h2>Thông tin cá nhân</h2>
-      <form onSubmit={handleSave}>
-        <input name="firstName" value={formData.firstName} onChange={handleChange} />
-        <input name="lastName" value={formData.lastName} onChange={handleChange} />
-        <input name="email" value={formData.email} onChange={handleChange} />
-        <input name="phone" value={formData.phone} onChange={handleChange} />
-        <button type="submit">Lưu</button>
-      </form>
+    <div className = "container-profile">
+      <h2>Account of: </h2>
+      <div className="profile-form">
+          <form onSubmit={handleSave}>
+            <input name="firstName" value={formData.firstName} onChange={handleChange} />
+            <input name="lastName" value={formData.lastName} onChange={handleChange} />
+            <input name="email" value={formData.email} onChange={handleChange} />
+            <input name="phone" value={formData.phone} onChange={handleChange} />
+            <button type="submit">Save</button>
+          </form>
+          <button className="logout-button" onClick={handleLogout}>Logout</button>
+      </div>
     </div>
   );
 }

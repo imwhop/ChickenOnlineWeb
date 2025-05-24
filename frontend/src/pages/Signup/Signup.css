@@ -82,3 +82,72 @@
   font-weight: bold;
   text-decoration: underline; /* có gạch chân */
 }
+
+/* Responsive for tablets and smaller devices */
+@media (max-width: 768px) {
+  .Signup-box {
+    flex-direction: column; /* Xếp dọc thay vì ngang */
+    width: 90%;
+    height: auto;
+    border-radius: 30px;
+    margin: 20px;
+  }
+
+  .Signup-image {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    border-radius: 30px 30px 0 0;
+  }
+
+  .Signup-image img {
+    height: 100%;
+    border-radius: 30px 30px 0 0;
+  }
+
+  .Signup-form {
+    padding: 40px 20px;
+  }
+
+  .Signup-form h2 {
+    font-size: 20px;
+  }
+
+  .Signup-form input[type="text"],
+  .Signup-form input[type="email"],
+  .Signup-form input[type="password"] {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .Create-button {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .Signin-text {
+    font-size: 14px;
+  }
+}
+
+/* Responsive for very small screens (phones) */
+@media (max-width: 480px) {
+  .Signup-form h2 {
+    font-size: 18px;
+  }
+
+  .Signup-form input[type="text"],
+  .Signup-form input[type="email"],
+  .Signup-form input[type="password"] {
+    font-size: 12px;
+  }
+
+  .Create-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .Signin-text {
+    font-size: 13px;
+  }
+}
