@@ -1,27 +1,27 @@
-import { useState } from "react";
-
-function CityDropDown () { 
-    const [selectedCity, setSelectedCity] = useState  ('')
+function CityDropDown({ selectedCity, onCityChange }) {
     const cities = ['Ho Chi Minh'];
-    const handleOnChange = (event) => {
-        setSelectedCity(event.target.value);
-    }
-return (
-    <div style = {{ margin: '20px'}} >
-        <select 
-        id="city-select"
-        value={selectedCity} onChange={handleOnChange}
-             style = {{padding: '20px', fontSize: '24px', borderRadius: '20px', width: '500px', height: '80px'}}
-        >
-        <option value = "">City</option>
-        { cities.map((city, index) => (
-            <option value={city} key ={index}>{city}</option>
-        ))}
-            
-        </select>
-
-
-    </div>
-) ;
+    
+    return (
+        <div style={{ margin: '20px' }}>
+            <select
+                id="city-select"
+                value={selectedCity}
+                onChange={(e) => onCityChange(e.target.value)}
+                style={{
+                    padding: '20px',
+                    fontSize: '18px',
+                    borderRadius: '20px',
+                    width: '300px',
+                    height: '70px'
+                }}
+            >
+                <option value="" disabled hidden>City</option>
+                {cities.map((city, index) => (
+                    <option value={city} key={index}>{city}</option>
+                ))}
+            </select>
+        </div>
+    );
 }
-export default CityDropDown
+
+export default CityDropDown;
