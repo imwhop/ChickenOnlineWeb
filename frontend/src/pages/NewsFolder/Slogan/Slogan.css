@@ -1,0 +1,96 @@
+/* ===== SLOGAN SECTION ===== */
+.slogan-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.slogan-titile{
+font-family: 'Fuzzy Bubbles', cursive;
+  font-size: 28px;
+  color: #C81931;
+  margin-bottom: 30px;
+}
+
+.slogan-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.slogan-image {
+  width: 300px;
+  border-radius: 12px;
+}
+
+.slogan-content p{
+  max-width: 400px;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: left;
+font-family: 'Fuzzy Bubbles', cursive;
+}
+
+/* ===== FEEDBACK SECTION ===== */
+.feedback-box {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.feedback-title {
+  font-family: 'Fuzzy Bubbles', cursive;
+  font-size: 26px;
+  color: #D9304F;
+  margin-bottom: 40px;
+}
+
+.feedback-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  padding: 20px;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card .avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card .stars {
+  font-size: 16px;
+  color: #FFD700;
+  margin-bottom: 10px;
+}
+
+.card .food-img {
+  width: 80px;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+.card .food-name {
+  font-family: 'Fuzzy Bubbles', cursive;
+    font-weight: bold;
+  font-size: 15px;
+}
