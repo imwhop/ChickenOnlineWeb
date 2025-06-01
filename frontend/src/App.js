@@ -13,7 +13,6 @@ import MenuSpaghetti from "./pages/MenuSpaghetti/MenuSpaghetti";
 import MenuCombo from "./pages/MenuCombo/MenuCombo";
 import MenuSideDishes from "./pages/MenuSideDishes/MenuSideDishes";
 import MenuPage from "./pages/Menu/Menu"; // layout chứa Sidebar + Outlet
-import News from "./pages/News/News";
 import Restaurant from "./pages/Restaurant/Restaurant";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Cart from "./pages/Cart/Cart";
@@ -22,6 +21,11 @@ import Signup from "./pages/Signup/Signup";
 import Profile from "./pages/Profile/Profile";
 import Checkout from "./pages/Checkout/Checkout"
 
+//NewsNews
+import News from "./pages/NewsFolder/News/News";
+import NewSlogan from "./pages/NewsFolder/Slogan/Slogan";
+import NewEvent from "./pages/NewsFolder/Event/Event";
+//Admindmin
 import AdminHome from "./pages/Admin/DashBroad/DashBroad";
 import AdminCustomer from "./pages/Admin/Customer/Customer";
 import AdminOrders from "./pages/Admin/orders/order";
@@ -68,6 +72,8 @@ function App() {
           <Route path="/admin/orders" element={<AdminOrders />} />
           <Route path="/admin/settings" element={<AdminSetting />} />
         </Route>
+
+         
         
         {/* Client layout - bọc CartProvider ở đây */}
         <Route element={<CartProvider><ClientLayout /></CartProvider>}>
@@ -81,7 +87,10 @@ function App() {
             <Route path="side-dishes" element={<MenuSideDishes />} />
           </Route>
 
-          <Route path="/news" element={<News />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/news/slogan" element={<NewSlogan />} />
+            <Route path="/news/event" element={<NewEvent />} />  
+
           <Route path="/restaurant" element={<Restaurant />} />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/cart" element={<Cart />} />
