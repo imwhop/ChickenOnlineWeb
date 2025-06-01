@@ -137,12 +137,14 @@
   }
 }
 
+
 /* Responsive for mobile phones */
 @media (max-width: 600px) {
   .account-box {
-    width: 95%;
+    width: 85%;
     margin: 20px 10px;
     border-radius: 20px;
+    margin-top: 70px;
   }
 
   .account-image {

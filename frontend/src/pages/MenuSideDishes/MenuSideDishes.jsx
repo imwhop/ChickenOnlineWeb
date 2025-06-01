@@ -20,13 +20,13 @@ export default function MenuSideDishes() {
       <div className="product-card">
         <img src={FrenchFries} alt="French Fries" />
         <h3>French Fries</h3>
-        <p>Price: 6.4 $</p>
+        <p>Price: 3 $</p>
         <button className="order-button"
           onClick={() =>
             handleOrder({
               id: 105,
               name: 'French Fries',
-              price: 6.4,
+              price: 3,
               image: FrenchFries,})}>ORDER
         </button>
       </div>
@@ -34,13 +34,13 @@ export default function MenuSideDishes() {
       <div className="product-card">
         <img src={MashPotatoes} alt="Mashed Potatoes" />
         <h3>Mashed Potatoes</h3>
-        <p>Price: 6.4 $</p>
+        <p>Price: 2.5 $</p>
         <button className="order-button"
           onClick={() =>
             handleOrder({
               id: 106,
               name: 'Mashed Potatoes',
-              price: 6.4,
+              price: 2.5,
               image: MashPotatoes,})}>ORDER
         </button>
       </div>
@@ -48,13 +48,13 @@ export default function MenuSideDishes() {
       <div className="product-card">
         <img src={CheeseFriedPotatoes} alt="Cheese Fried Potatoes" />
         <h3>Cheese Fried Potatoes</h3>
-        <p>Price: 6.4 $</p>
+        <p>Price: 3.5 $</p>
         <button className="order-button"
           onClick={() =>
             handleOrder({
               id: 107,
               name: 'Cheese Fried Potatoes',
-              price: 6.4,
+              price: 3.5,
               image: CheeseFriedPotatoes,})}>ORDER
         </button>
       </div>

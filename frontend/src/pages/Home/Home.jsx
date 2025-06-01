@@ -51,12 +51,12 @@ function Home() {
         <div className="product-card">
           <img src={SourChickenRice} alt="Chicken Rice" />
           <h3>Sweet and Sour Chicken Rice</h3>
-          <p>Price: 6.4 $</p>
+          <p>Price: 4.5 $</p>
           <button className="order-button"
             onClick={() =>handleOrder({
                 id: 101,
                 name: 'Sweet and Sour Chicken Rice',
-                price: 6.4, image: SourChickenRice,})}>ORDER
+                price: 4.5, image: SourChickenRice,})}>ORDER
           </button>
         </div>
 
@@ -77,13 +77,13 @@ function Home() {
         <div className="product-card">
           <img src={FrenchFries} alt="French Fries" />
           <h3>French Fries</h3>
-          <p>Price: 6.4 $</p>
+          <p>Price: 3 $</p>
           <button className="order-button"
             onClick={() =>
               handleOrder({
                 id: 105,
                 name: 'French Fries',
-                price: 6.4,
+                price: 3,
                 image: FrenchFries,})}>ORDER
           </button>
         </div>
@@ -91,13 +91,13 @@ function Home() {
         <div className="product-card">
           <img src={GroupComboB} alt="Group Combo B" />
           <h3>Group Combo B</h3>
-          <p>Price: 6.4 $</p>
+          <p>Price: 24.4 $</p>
           <button className="order-button"
             onClick={() =>
               handleOrder({
                 id: 104,
                 name: 'Group Combo B',
-                price: 6.4,
+                price: 24.4,
                 image: GroupComboB,})}>ORDER
           </button>
         </div>

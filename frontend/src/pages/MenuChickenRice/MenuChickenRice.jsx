@@ -20,25 +20,25 @@ export default function MenuChickenRice() {
         <div className="product-card">
           <img src={SourChickenRice} alt="Chicken Rice" />
           <h3>Sweet and Sour Chicken Rice</h3>
-          <p>Price: 6.4 $</p>
+          <p>Price: 4.5 $</p>
           <button className="order-button"
             onClick={() =>handleOrder({
                 id: 101,
                 name: 'Sweet and Sour Chicken Rice',
-                price: 6.4, image: SourChickenRice,})}>ORDER
+                price: 4.5, image: SourChickenRice,})}>ORDER
           </button>
         </div>
 
         <div className="product-card">
           <img src={TeriyakiChickenRice} alt="Chicken Rice" />
           <h3>Teriyaki Chicken Rice</h3>
-          <p>Price: 6.4 $</p>
+          <p>Price: 4.8 $</p>
           <button className="order-button"
             onClick={() =>
               handleOrder({
                 id: 102,
                 name: 'Teriyaki Chicken Rice',
-                price: 6.4,
+                price: 4.8,
                 image: TeriyakiChickenRice,})}>ORDER
           </button>
         </div>

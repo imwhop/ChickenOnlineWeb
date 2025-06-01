@@ -16,6 +16,7 @@
   margin-bottom: 24px;
 }
 
+
 .profile-form form {
   display: flex;
   flex-direction: column;
@@ -70,8 +71,9 @@
 
 @media (max-width: 600px) {
   .container-profile {
-    margin: 20px 10px;
+    
     padding: 16px;
+    margin: 150px 10px;
   }
 
   .container-profile h2 {

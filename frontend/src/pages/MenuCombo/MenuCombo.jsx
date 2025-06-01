@@ -19,13 +19,13 @@ export default function MenuCombo() {
           <div className="product-card">
             <img src={ComboA} alt="Combo A" />
             <h3>Combo A</h3>
-            <p>Price: 6.4 $</p>
+            <p>Price: 12 $</p>
             <button className="order-button"
               onClick={() =>
                 handleOrder({
                   id: 103,
                   name: 'Combo A',
-                  price: 6.4,
+                  price: 12,
                   image: ComboA,})}>ORDER
             </button>
           </div>
@@ -33,13 +33,13 @@ export default function MenuCombo() {
           <div className="product-card">
             <img src={GroupComboB} alt="Group Combo B" />
             <h3>Group Combo B</h3>
-            <p>Price: 6.4 $</p>
+            <p>Price: 24.4 $</p>
             <button className="order-button"
               onClick={() =>
                 handleOrder({
                   id: 104,
                   name: 'Group Combo B',
-                  price: 6.4,
+                  price: 24.4,
                   image: GroupComboB,})}>ORDER
             </button>
           </div>

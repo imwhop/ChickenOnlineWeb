@@ -90,7 +90,8 @@
     width: 90%;
     height: auto;
     border-radius: 30px;
-    margin: 20px;
+    margin: 100px 10px;
+    
   }
 
   .Signup-image {
@@ -107,6 +108,7 @@
 
   .Signup-form {
     padding: 40px 20px;
+    margin-top: 150px;
   }
 
   .Signup-form h2 {

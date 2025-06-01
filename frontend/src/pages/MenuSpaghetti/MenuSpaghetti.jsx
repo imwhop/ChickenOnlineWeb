@@ -33,13 +33,13 @@ export default function MenuSpaghetti() {
       <div className="product-card">
         <img src={BonelessChickenspaghetti} alt="Boneless Chicken Spaghetti" />
         <h3>Boneless Chicken Spaghetti</h3>
-        <p>Price: 6.4 $</p>
+        <p>Price: 5.5 $</p>
         <button className="order-button"
           onClick={() =>
             handleOrder({
               id: 109,
               name: 'Boneless Chicken Spaghetti',
-              price: 6.4,
+              price: 5.5,
               image: BonelessChickenspaghetti,})}>ORDER
         </button>
       </div>
