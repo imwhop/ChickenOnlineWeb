@@ -4,7 +4,7 @@ const { pool } = require("../models/db");
 
 // ĐĂNG KÝ
 exports.register = async (req, res) => {
-  const { firstName, lastName, email, phone, password, role } = req.body;
+  const { firstName, lastName, email, phone, password } = req.body;
 
   try {
     const hashedPassword = await bcrypt.hash(password, 10);
@@ -16,10 +16,9 @@ exports.register = async (req, res) => {
       .input("email", email)
       .input("phone", phone)
       .input("passwordHash", hashedPassword)
-      .input("role", role || "customer")
       .query(`
-        INSERT INTO Customers (FirstName, LastName, Email, Phone, PasswordHash, Role)
-        VALUES (@firstName, @lastName, @email, @phone, @passwordHash, @role)
+        INSERT INTO Customers (FirstName, LastName, Email, Phone, PasswordHash)
+        VALUES (@firstName, @lastName, @email, @phone, @passwordHash)
       `);
 
     res.status(201).json({ message: "Customer registered successfully" });
@@ -141,7 +140,4 @@ exports.googleLogin = async (req, res) => {
     console.error("Google login error:", err);
     res.status(500).json({ error: "Internal server error" });
   }
-
-
-  
 };
