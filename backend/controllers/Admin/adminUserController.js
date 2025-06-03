@@ -130,7 +130,7 @@ class AdminUserController {
             if (!existingUser) { 
                 return res.status(404).json({
                     success: false, 
-                    message: 'Error: Cant find user'
+                    message: 'Error: User already exists'
                 });
             }
 

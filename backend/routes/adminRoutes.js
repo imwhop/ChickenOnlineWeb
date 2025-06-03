@@ -13,13 +13,13 @@ const AdminUserController = require('../controllers/Admin/adminUserController');
 // FOOD ROUTES 
 // =================================
 
-/*
-router.get('/foods', verifyToken, verifyAdmin, AdminFoodController.getAllFoods);
+
+router.get('/foods', verifyToken, verifyAdmin, AdminFoodController.getAllFood);
 router.get('/foods/:id', verifyToken, verifyAdmin, AdminFoodController.getFoodById);
-router.post('/foods', verifyToken, verifyAdmin, AdminFoodController.createFood);
-router.put('/foods/:id', verifyToken, verifyAdmin, AdminFoodController.updateFood);
-router.delete('/foods/:id', verifyToken, verifyAdmin, AdminFoodController.deleteFood);
-*/
+router.post('/foods', verifyToken, verifyAdmin, AdminFoodController.createProdcut);
+router.put('/foods/:id', verifyToken, verifyAdmin, AdminFoodController.updateProduct);
+router.delete('/foods/:id', verifyToken, verifyAdmin, AdminFoodController.deleteProduct);
+
 
 // =================================
 // USER ROUTES
@@ -33,7 +33,7 @@ router.delete('/users/:id', verifyToken, verifyAdmin, AdminUserController.delete
 // =================================
 // DASHBOARD
 // =================================
-/*
+
 router.get('/dashboard', verifyToken, verifyAdmin, AdminUserController.getDashboard);
-*/
+
 module.exports = router;
