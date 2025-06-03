@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './New.css'; 
 import ChickenRestaurant from '../../../assets/images/chicken-restaurant.jpg'; 
-import Slogan  from '../../../assets/images/cua hang.jpg';
+import Slogan  from '../../../assets/images/cuahang.jpg';
 import Event from '../../../assets/images/thu thach.jpg';
 
 

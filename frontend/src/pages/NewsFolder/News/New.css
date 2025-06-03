@@ -1,16 +1,12 @@
 
-
-
 .news-section {
-
   position: relative;
   width:100%;
-  
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
- background-color: #fff; 
+  background-color: #fff; 
   object-fit: cover;
 
 }
@@ -20,13 +16,13 @@
   width:100%;
   max-height:450px;
   justify-content: center;
-    align-items: center;
+  align-items: center;
 
   }
 
 .news-title {
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #f4b400; /* vàng như thiết kế */
@@ -123,5 +119,48 @@ display: flex;
   border-radius: 10px;
 }
 
+@media (max-width: 768px) {
+.news-section {
+    width: 110%; /* Đảm bảo chiếm toàn bộ chiều rộng */
+    height: auto; /* Tự động điều chỉnh chiều cao */
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
 
+  .news-title {
+    font-size: 36px; /* Giảm kích thước chữ tiêu đề */
+    text-align: center;
+  }
+
+  .sloganandstory-sections,
+  .event-section {
+    flex-direction: column; /* Chuyển từ ngang sang dọc */
+    align-items: flex-start;
+    max-width: 100%;
+    margin: 20px;
+  }
+
+  .Slogan,
+  .Event {
+    width: 100%;
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá khung */
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .sloganandstory-title,
+  .event-title {
+    font-size: 20px;
+  }
+
+  .sloganandstory-text,
+  .event-text {
+    font-size: 15px;
+  }
+
+  .ChickenRestaurant {
+    max-height: 250px; /* Giảm chiều cao ảnh nếu cần */
+    object-fit: cover;
+  }
+}
 

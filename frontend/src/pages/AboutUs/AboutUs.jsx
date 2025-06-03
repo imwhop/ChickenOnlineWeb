@@ -1,7 +1,7 @@
 import React from 'react';
 import './AboutUs.css'; 
 import ChickenHeader from '../../assets/images/1513628022992-DRNqAu2UEAAhIbj.png';
-import ChickkenInfo from '../../assets/images/269912a43432af5c9cf603093bb984c9.jpg';
+import ChickkenInfo from '../../assets/images/gamayo.jpg';
 
 
 export default function AboutUs() {

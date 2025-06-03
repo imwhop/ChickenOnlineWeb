@@ -1,39 +1,91 @@
+.Slogan-container {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', sans-serif;
+    
+}
+
+.Slider-section {
+    position: relative;
+    width: 100%;
+    text-align:center;
+    margin-bottom: 50px;
+}
+.Slider-image{
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.Arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 32px;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.Arrow.left {
+    left: 10px;
+}
+
+.Arrow.right {
+    right: 10px;
+}
+
+
+
 /* ===== SLOGAN SECTION ===== */
+
+.slogan-title{
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 26px;
+    color: #D9304F;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
 .slogan-section {
-  text-align: center;
-  padding: 60px 20px;
+    display: flex; /* Flexbox for layout */
+    align-items: center ; /*căn dọc giữa */
+    gap: 20px;
+    background-color: white;
+    padding: 40px 60px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 30px auto; 
 }
 
-.slogan-titile{
-font-family: 'Fuzzy Bubbles', cursive;
-  font-size: 28px;
-  color: #C81931;
-  margin-bottom: 30px;
-}
 
+.slogan-section img {
+    width: 480px; 
+    height: auto;
+    flex-shrink: 0; /* Đảm bảo hình ảnh không bị co lại khi không đủ chỗ */
+    border-radius: 30px;
+    
+}
 .slogan-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  max-width: 1000px;
-  margin: 0 auto;
-  flex-wrap: wrap;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    flex: 1;
+    margin-left: 50px;
 }
 
-.slogan-image {
-  width: 300px;
-  border-radius: 12px;
-}
 
-.slogan-content p{
-  max-width: 400px;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: left;
-font-family: 'Fuzzy Bubbles', cursive;
+.slogan-content p {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #333;
 }
-
 /* ===== FEEDBACK SECTION ===== */
 .feedback-box {
   text-align: center;
@@ -93,4 +145,56 @@ font-family: 'Fuzzy Bubbles', cursive;
   font-family: 'Fuzzy Bubbles', cursive;
     font-weight: bold;
   font-size: 15px;
+}
+
+@media (max-width: 768px) {
+.Slogan-container{
+  margin-top: 40px;
+}
+
+  /* Slider section */
+  .Slider-image {
+    max-height: 250px;
+  }
+
+  .Arrow {
+    font-size: 24px;
+    padding: 6px 10px;
+  }
+
+  /* Slogan section */
+  .slogan-section {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .slogan-section img {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .slogan-content {
+    margin-left: 0;
+  }
+
+  .slogan-content p {
+    font-size: 16px;
+  }
+
+  .slogan-title {
+    font-size: 22px;
+  }
+
+  /* Feedback cards */
+  .feedback-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 300px;
+  }
 }

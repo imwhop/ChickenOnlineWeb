@@ -1,0 +1,161 @@
+.Event-container {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', sans-serif;
+
+}
+
+.slider-section {
+    position: relative;
+    width: 100%;
+    text-align:center;
+    margin-bottom: 50px;
+}
+.slider-image{
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 32px;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.arrow.left {
+    left: 10px;
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+.happy-hour{
+    display: flex; /* Flexbox for layout */
+    align-items: center ; /*căn dọc giữa */
+    gap: 20px;
+    background-color: white;
+    padding: 40px 60px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 30px auto; 
+}
+
+
+.happy-hour img {
+    width: 160px; 
+    height: auto;
+    flex-shrink: 0; /* Đảm bảo hình ảnh không bị co lại khi không đủ chỗ */
+    
+}
+.happy-hour-text {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    flex: 1;
+    margin-left: 800px;
+}
+
+.happy-hour-text h2 {
+    font-size: 36px;
+    color: #d62828;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.happy-hour-text p {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #333;
+}
+
+.challenge{
+    display: flex; /* Flexbox for layout */
+    align-items: center ; /*căn dọc giữa */
+    gap: 20px;
+    background-color: white;
+    padding: 40px 60px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 30px auto; 
+    margin-bottom: 100px;
+}
+
+
+.challenge img {
+    width: 160px; 
+    height: auto;
+    flex-shrink: 0; /* Đảm bảo hình ảnh không bị co lại khi không đủ chỗ */
+}
+.challenge-text {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    flex: 1; /* Cho phép phần text chiếm không gian còn lại */
+}
+
+.challenge-text h2 {
+    font-size: 36px;
+    color: #d62828;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.challenge-text p {
+    font-size: 18px;
+    line-height: 1.4;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+
+  .Event-container {
+    margin-top: 40px;
+  }
+  .slider-image {
+    max-height: 250px; /* Giảm chiều cao ảnh slider trên điện thoại */
+  }
+
+  .arrow {
+    font-size: 24px;
+    padding: 6px 10px;
+  }
+
+  .happy-hour,
+  .challenge {
+    flex-direction: column; /* Chuyển layout từ hàng ngang sang dọc */
+    padding: 20px;
+    text-align: center;
+  }
+
+  .happy-hour img,
+  .challenge img {
+    margin-bottom: 15px;
+  }
+
+  .happy-hour-text,
+  .challenge-text {
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .happy-hour-text h2,
+  .challenge-text h2 {
+    font-size: 28px;
+  }
+
+  .happy-hour-text p,
+  .challenge-text p {
+    font-size: 16px;
+  }
+}

@@ -12,9 +12,9 @@ function Footer(){
         </div>
         <div className="footer-section">
             <h3>Information</h3>
-            <p><a href="#!">Home</a></p>
-            <p><a href="#!">Menu</a></p>
-            <p><a href="#!">Restaurant</a></p>
+            <p><a href="./Home">Home</a></p>
+            <p><a href="./Menu">Menu</a></p>
+            <p><a href="./Restaurant">Restaurant</a></p>
         </div>
         <div className="footer-section">
             <h3>Connect with Friend & Chicken</h3>
